@@ -1,0 +1,14 @@
+name: DDGVanishPlugin
+version: ${project.version}
+main: me.whitetiger.ddgbootcamp.DDGVanish
+authors: [007_Whitetiger]
+description: Vanish plugin voor ddg bootcamp
+
+commands:
+  vanish:
+    description: main command voor plugin
+    aliases:
+      - v
+      - ddgvanish
+      - ddgv
+

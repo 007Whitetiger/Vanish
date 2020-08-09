@@ -1,0 +1,23 @@
+
+# setting if you can leave vanished and join vanished
+leaveVanished: true
+
+
+vanishPrefix: "&6[Vanish] "
+
+vanishEnable: "&aVanish enabled!"
+vanishDisable: "&cVanish disabled!"
+
+adminVanished: "%player% is gevanished!"
+adminShow: "%player% is uit vanish gegaan!"
+adminLeftVanished: "&c%player% is geleaved vanished!"
+adminJoinedVanished: "&a%player% is gejoined vanished!"
+adminHidden: "&3Je kunt vanished players nu niet meer zien!"
+adminShown: "&3Je kunt vanished players weer zien!"
+
+errorNoPermissions: "&4Je hebt niet genoeg permissies!"
+errorNotaPlayer: "&4Je moet een player zijn om deze command te gebruiken!"
+errorNoSubCommand: "&4Gebruik: /%s [subcommand]"
+
+# DON'T DELETE THIS (vanished storage)
+vanished: {}

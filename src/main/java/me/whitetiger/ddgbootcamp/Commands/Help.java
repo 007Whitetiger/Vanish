@@ -5,21 +5,16 @@ Please create your own code or ask me for permission at the email above
 --------------------------------------------------------------------------------------------------------------------- */
 package me.whitetiger.ddgbootcamp.Commands;
 
-import me.whitetiger.ddgbootcamp.DDGVanish;
 import org.bukkit.entity.Player;
 
-public class Info extends VanishCommand {
-    public Info() {
-        super("info", new String[0], "info command", false);
+public class Help extends VanishCommand{
+    public Help() {
+        super("help", new String[0], "Help Command", false);
     }
 
     @Override
     public void onCommand(Player player, String[] args) {
-        player.sendMessage("§6Made by: §9007_Whitetiger");
-        player.sendMessage("§6For more info:");
-        player.sendMessage("https://github.com/007Whitetiger");
-        player.sendMessage("§6Github repo:");
-        player.sendMessage("https://github.com/007Whitetiger/Vanish");
-        player.sendMessage("Version: " + DDGVanish.getInstance().version);
+        player.sendMessage("--------§6help§f--------");
+        VanishCommand.getCommands().forEach(vanishCommand -> player.sendMessage("§6/vanish " + vanishCommand.getCommand() + ": §f" + vanishCommand.getDescription()));
     }
 }

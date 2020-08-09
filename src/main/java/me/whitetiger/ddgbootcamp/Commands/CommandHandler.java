@@ -20,6 +20,8 @@ public class CommandHandler implements CommandExecutor {
         new Vanish();
         new AdminShow();
         new AdminHide();
+        new Info();
+        new Help();
     }
 
     @Override
@@ -50,10 +52,9 @@ public class CommandHandler implements CommandExecutor {
                     return true;
                 }
             }
+            // help message if it's not a valid subcommand
             player.sendMessage("--------§6help§f--------");
-            VanishCommand.getCommands().forEach(vanishCommand -> {
-                player.sendMessage("§6/vanish " + vanishCommand.getCommand() + ": §f" + vanishCommand.getDescription());
-            });
+            VanishCommand.getCommands().forEach(vanishCommand -> player.sendMessage("§6/vanish " + vanishCommand.getCommand() + ": §f" + vanishCommand.getDescription()));
 
         } else {
             sender.sendMessage(Constants.getNotaplayer());

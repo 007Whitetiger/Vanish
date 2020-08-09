@@ -24,12 +24,17 @@ public class Vanish extends VanishCommand {
 
     @Override
     public void onCommand(Player player, String[] args) {
+        // checks if already vanished
        if (vanishManager.playerIsVanished(player)) {
+           // disable vanish
            vanishManager.show(player);
+           // send messages
            player.sendMessage(Constants.getShowMessage());
            BroadCastUtils.broadCastToAdmins(Constants.getBroadCastShow().replaceAll("%player%", player.getName()));
        } else {
+           // enable vanish
            vanishManager.vanish(player);
+           // send messages
            player.sendMessage(Constants.getVanishMessage());
            BroadCastUtils.broadCastToAdmins(Constants.getBroadCastVanish().replaceAll("%player%", player.getName()));
        }

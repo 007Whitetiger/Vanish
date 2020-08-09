@@ -26,6 +26,7 @@ public class AdminShow extends VanishCommand {
             player.showPlayer(plugin, vanishedPlayer);
         });
         vanishManager.removeHidden(player);
+        // send message
         player.sendMessage(Constants.getAdminShown());
     }
 }

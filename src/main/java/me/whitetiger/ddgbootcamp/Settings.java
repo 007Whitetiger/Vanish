@@ -11,6 +11,9 @@ public class Settings {
 
     public static boolean canJoinVanished;
 
+    /**
+     * gets all settings
+     */
     public Settings() {
         DDGVanish plugin = DDGVanish.getInstance();
         FileConfiguration file = plugin.getConfig();

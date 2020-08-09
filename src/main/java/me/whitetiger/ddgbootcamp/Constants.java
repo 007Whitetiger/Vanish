@@ -34,6 +34,9 @@ public class Constants {
     public static String notaplayer;
     public static String noSubCommandError;
 
+    /**
+     * gets all messages from config and saves them
+     */
     public Constants() {
         DDGVanish plugin = DDGVanish.getInstance();
         file = plugin.getConfig();
